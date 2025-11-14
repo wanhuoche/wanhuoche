@@ -1,0 +1,20 @@
+/* 图片容器 */
+    .image-container {
+      display: inline-block;
+      overflow: hidden;
+      border-radius: 8px; /* 圆角，可选 */
+    }
+
+    /* 图片基础样式 */
+    .image-container img {
+      width: 200px; /* 图片大小可调 */
+      height: 250px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* 鼠标悬浮效果 */
+    .image-container img:hover {
+      transform: scale(1.1); /* 放大 */
+      box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* 阴影 */
+    }
