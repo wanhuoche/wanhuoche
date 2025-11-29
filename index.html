@@ -1,98 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 <head>
-    <!-- 加入 Poppins 字体链接 -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kingtriain's website</title>
-    <style>
-        .header {
-            display: flex;
-            align-items: center;
-            margin-bottom: 100px; /* 👈 控制整体与下方内容的间距 */
-        }
-
-        .title {
-            font-size: 50px;
-            color: rgb(255, 165, 0);
-        }
-        .headImg {
-            width: 50px;
-            height: 50px;
-            border-radius: 50%;
-            object-fit: cover;
-        }
-
-        body {
-            background-color: #fdf6f0; /* 柔和米白底 */
-            color: #333;               /* 主文字色 */
-            font-family: 'Poppins', sans-serif;
-        }
-
-        h1, h2 {
-            color: #FFA500;            /* 橙色标题 */
-        }
-
-        .introduce {
-            color: #9370DB;            /* 紫色介绍文字 */
-        }
-
-    </style>
+    <title>Kingtrain's Website</title>
+    <!-- Poppins 字体 -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <!-- 外部 CSS -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- 头部 -->
     <div class="header">
         <img src="https://picx.zhimg.com/v2-01adec91759cbaae5116a4b67981df9e_720w.jpg?source=172ae18b" alt="头像" class="headImg">
         <span class="title">Kingtrain</span>   
     </div>
 
+    <!-- 简介 -->
     <h2>🧑‍💼 1. 个人简介（About Me）</h2>
-    <div class="introduce">中国人, 大学生, 未来的前端程序员, 游戏鉴赏家, ai重度依赖者</div>
+    <div class="introduce">中国人, 大学生, 未来的前端程序员, 游戏鉴赏家, AI 重度依赖者</div>
+
+    <!-- 作品集 -->
     <h2>📁 2. 作品集（Portfolio）</h2>
     <div class="portfolio">
         <div>
-            <img src="https://picsum.photos/300/200?random=1" alt="项目封面" style="width:300px; border-radius:10px;">
+            <img src="photo/2(1).jpg" alt="项目封面">
             <h3>个人博客系统</h3>
             <p>使用 HTML/CSS/JavaScript 构建的响应式博客页面，支持文章发布与分类。</p>
             <a href="#">查看项目</a>
         </div>
-        <br>
         <div>
-            <img src="https://picsum.photos/300/200?random=2" alt="项目封面" style="width:300px; border-radius:10px;">
-            <h3>我的项目展示</h3>
-            <p>这是我用 React 构建的 Todo 应用，支持添加、编辑、删除任务。</p>
-            <a href="react-todo-tailwind-two.vercel.app" target="_blank">
-                👉 查看我的 React Todo 项目
-            </a>
-
-
+            <img src="photo/61.jpg" alt="项目封面">
+            <h3>React Todo 应用</h3>
+            <p>用 React + Tailwind 构建的 Todo 应用，支持添加、编辑、删除任务。</p>
+            <a href="https://react-todo-tailwind-two.vercel.app/" target="_blank">👉 查看我的 React Todo 项目</a>
+        </div>
+        <div>
+            <img src="photo/7(1).jpg" alt="GitHub仓库">
+            <h3>我的 GitHub 仓库</h3>
+            <p>这里是我所有项目的源代码集合，持续更新中。</p>
+            <a href="https://github.com/wanhuoche/wanhuoche.git" target="_blank" class="github-link">🌐 前往 GitHub 仓库</a>
         </div>
     </div>
+
+    <!-- 博客 -->
     <h2>📝 3. 博客或随笔（Blog / Thoughts）</h2>
     <div class="blog">
         <h3>📚 如何开始学习前端开发</h3>
         <p>从 HTML、CSS 到 JavaScript，我总结了一些适合初学者的学习路径和资源推荐。</p>
         <a href="#">阅读全文</a>
-        <br><br>
+
         <h3>🧠 AI 是工具还是伙伴？</h3>
         <p>我分享了自己使用 AI 辅助学习、写作、设计的经历，以及对未来的思考。</p>
         <a href="#">阅读全文</a>
     </div>
-    <h2>🕹️ 4. 兴趣板块（Fun Zone）喜欢的音乐、游戏、电影、书单</h2>
-    <!-- 可以嵌入 Spotify 播放器或豆瓣链接 -->
-    <div class="book-review">影评:
-        <a href="https://wanhuoche.github.io/wanhuoche/movie-reviews/GreenBook.html" class="image-container">
-            <img src="photo/p2882355065.webp" alt="">
-        </a>
+
+    <!-- 兴趣板块 -->
+    <h2>🕹️ 4. 兴趣板块（Fun Zone）</h2>
+    <div class="fun-zone">
+        <div class="review-card">
+            <img src="photo/p2882355065.webp" alt="Green Book 海报">
+            <div class="review-content">
+                <h3>🎬 Green Book 影评</h3>
+                <p>一段跨越种族与阶级的公路旅程，讲述了真实友情的温暖故事。</p>
+                <a href="https://wanhuoche.github.io/wanhuoche/movie-reviews/GreenBook.html" target="_blank">📖 阅读完整影评</a>
+            </div>
+        </div>
     </div>
-    <h3>
-        📞 5. 联系方式（Contact）
-    </h3>
-    <span class="contact">Gmail: anniecassidyc@gmail.com
-        <br><br>
+
+
+    <!-- 联系方式 -->
+    <h2>📞 5. 联系方式（Contact）</h2>
+    <span class="contact">
+        Gmail: anniecassidyc@gmail.com <br><br>
         QQmail: 1873857667@qq.com
     </span>
-    
 </body>
 </html>
